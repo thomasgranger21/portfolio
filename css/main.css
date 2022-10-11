@@ -1,3 +1,45 @@
+:root {
+  --font-heading: "Noto Sans", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
 body {
   background-color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.15rem;
 }
