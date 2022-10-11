@@ -8,7 +8,9 @@
             {{ page.title }} - Thomas Granger {% else %}
             ThomasGranger {% endif %}
         </title>
-        <meta name="theme-color" content="#d12727" />
+        {%- comment -%}
+        <meta name="theme-color" content="" /> {%- endcomment -%}
+        {%- comment -%} Choose a theme color {%- endcomment -%}
         <meta name="description" content="{{ page.description }}" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:title" content="{{ page.title | escape }}" />
@@ -20,10 +22,14 @@
         <!-- Add main image -->
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="/css/main.css" />
+        <script src="js/main.js" defer></script>
         {% if page.stylesheets %} {% for stylesheet in page.stylesheets %}
         <link rel="stylesheet" href="/css/{{ stylesheet }}.css" />
+        {% endfor %} {% endif %}
+
+        {% if page.scripts %} {% for script in page.scripts %}
+        <script src="/js/{{ script }}.js" defer></script>
         {% endfor %} {% endif %}
     </head>
 </head>
