@@ -8,7 +8,7 @@ include:
 collections:
   projects:
     output: true
-    permalink: /:projects/:name
+    permalink: /:collection/:name
     sort_by: date
 # Exclude from processing.
 # The following items will not be processed, by default.
