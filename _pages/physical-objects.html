@@ -11,7 +11,7 @@ permalink: /physical-objects
       <img src="{{ project.image.src }}" alt="{{ project.image.alt}}" />
       {{ project.title }} - {{ project.date }}
 
-      <p>{{ staff_member.content | markdownify }}</p>
+      <p>{{ project.content | markdownify }}</p>
     </a>
   </article>
   {% endif %} {% endfor %}
