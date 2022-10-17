@@ -1,0 +1,10 @@
+<article class="project-card">
+  <a href="{{ project.url }}">
+    <img src="{{ project.image.src }}" alt="{{ project.image.alt}}" />
+    <div>
+      <h2>{{ project.title }} - {{ project.date }}</h2>
+
+      <p>{{ project.content | markdownify }}</p>
+    </div>
+  </a>
+</article>

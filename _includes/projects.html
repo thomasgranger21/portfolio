@@ -1,0 +1,4 @@
+<section class="projects">
+  {% for project in site.projects %} {% if project.digital == include.digital %}
+  {% include project.html project=project %} {% endif %} {% endfor %}
+</section>

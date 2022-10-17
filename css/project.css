@@ -1,0 +1,9 @@
+.project {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.project > .header {
+  max-width: 50vh;
+}
