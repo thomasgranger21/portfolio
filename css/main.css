@@ -1,167 +1,221 @@
-section {padding: 0 20px; }
+:root {
+  --font-heading: "Anybody", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
-body{
-	background-color: #212121;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+section {
+  padding: 0 20px;
+}
+
+body {
+  background-color: #212121;
 }
 header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 header figure {
-	width: 100%;
-	margin: auto;
-	min-width:  200px;
+  width: 100%;
+  margin: auto;
+  min-width: 200px;
 }
-img {width:  100%}
-
-h1{
-	font-family: "Anybody";
-	text-align: right;
-    color: white;
-    font-size: 40px;
-    justify-content: right;
-    align-self: center;
-    padding-right: 5vw;
-    padding-left: 5vw;
-}
-body{
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 0;
-}
-body > div{
-	margin: 10px;
-	padding: 20px;
-	width: 50%;
-	align-self: center;
-}
-footer{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-bottom: 2vh;
-	margin-top: 2vh;
-}
-footer > div{
-	color: white;
-	font-family: "Anybody";
-}
-footer > nav{
-	align-self: center;
-}
-.navlk{
-	text-decoration: none;
-	color: white;
-	font-family: "Anybody";
-	padding: 2vw;
-}
-.navlk:hover{
-	background-color: white;
-	color: #212121;
-}
-#topnav{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: center;
-}
-p{
-	color: white;
-	padding: 2vw;
-	text-align: justify;
-	font-family: "Anybody";;
-	font-size: 20px;
-}
-#pp{
-	width: 25%;
-}
-#card1, #card2, #card3{
-	display: flex;
-	margin-top: 2vw;
-	background-color: white;
-	max-width: 80%;
-	min-height: 40%;
-	align-content: center;
-}
-#light, #book, #vase{
-	align-content: center;
-	width: auto;
-	max-width: 50%;
-  	height: auto;
-  	max-height: 50%;
-}
-#card1> div{
-	margin: 20px;
-}
-#card2> div{
-	margin: 20px;
-}
-#card3> div{
-	margin: 20px;
-}
-#cardp, #card2p, #card3p{
-	font-family: "Anybody";
-	text-align: left;
-	color: #212121;
-}
-h2{
-	font-family: "Anybody";
-	text-align: left;
-	color: #212121;
-	padding: 2vw;
+img {
+  width: 100%;
 }
 
-	@media only screen and (max-width: 900px) {
-		h1{
-		font-size: 30px;
-		padding-right: 2.5vw;
-    padding-left: 2.5vw;}
-    img{
-		width: 100%;
-	}
-		footer{
-		margin-bottom: 1vh;
-		margin-top: 1vh;
-		flex-direction: column;
-		margin-left: auto;
+h1 {
+  font-family: "Anybody";
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  justify-content: right;
+  align-self: center;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+body > div {
+  margin: 10px;
+  padding: 20px;
+  width: 50%;
+  align-self: center;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+footer > div {
+  color: white;
+  font-family: "Anybody";
+}
+footer > nav {
+  align-self: center;
+}
+.navlk {
+  text-decoration: none;
+  color: white;
+  font-family: "Anybody";
+  padding: 2vw;
+}
+.navlk:hover {
+  background-color: white;
+  color: #212121;
+}
+#topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+p {
+  color: white;
+  padding: 2vw;
+  text-align: justify;
+  font-family: "Anybody";
+  font-size: 20px;
+}
+#pp {
+  width: 25%;
+}
+.project-card {
+  display: flex;
+  margin-top: 2vw;
+  background-color: white;
+  max-width: 80%;
+  min-height: 40%;
+  align-content: center;
+}
+#light,
+#book,
+#vase {
+  align-content: center;
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
+}
+#card1 > div {
+  margin: 20px;
+}
+#card2 > div {
+  margin: 20px;
+}
+#card3 > div {
+  margin: 20px;
+}
+.project-card p {
+  font-family: "Anybody";
+  text-align: left;
+  color: #212121;
+}
+h2 {
+  font-family: "Anybody";
+  text-align: left;
+  color: #212121;
+  padding: 2vw;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+  }
+  img {
+    width: 100%;
+  }
+  footer {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    flex-direction: column;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
-	}
-	h3{
-		font-size: 18px;
-	}
-		p{
-		font-size: 16px;
-	}
-
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 600px) {
-	h1{
-		font-size: 20px;
-		padding-right: 1vw;
+  h1 {
+    font-size: 20px;
+    padding-right: 1vw;
     padding-left: 1vw;
-	}
-	img{
-		width: 100%;
-	}
-	footer{
-		margin-bottom: 2vh;
-		margin-top: .5vh;
-		flex-direction: column;
-		margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-	}
-	.navlk{
-		padding: 2vw;
-		font-size: 12px;
-	}
-	h3{
-		font-size: 12px;
-	}
-	p{
-		font-size: 12px;
-	}
-	h2{
-		font-size: 14px;
-	}
+  }
+  img {
+    width: 100%;
+  }
+  footer {
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .navlk {
+    padding: 2vw;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}

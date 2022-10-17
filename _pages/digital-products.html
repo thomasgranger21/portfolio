@@ -1,0 +1,18 @@
+---
+layout: default
+title: Projects
+permalink: /digital-products
+---
+
+<main>
+  {% for project in site.projects %} {% if project.digital %}
+  <article>
+    <a href="{{ project.url }}">
+      <img src="{{ project.image.src }}" alt="{{ project.image.alt}}" />
+      {{ project.title }} - {{ project.date }}
+
+      <p>{{ staff_member.content | markdownify }}</p>
+    </a>
+  </article>
+  {% endif %} {% endfor %}
+</main>
